@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 93.75%;
+}
+
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --color-medium-grey: hsla(216, 12%, 54%, 0.15);
+  --color-dark-blue: hsla(214, 29%, 17%, 0.815);
+  --color-very-dark-blue: hsl(216, 12%, 8%);
+  --font-primary: "Overpass", sans-serif;
+  --font-size: 15px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-light-grey);
+  font-family: var(--font-primary);
+  font-size: var(--font-size);
+}
+
+section.main {
+  background-color: var(--color-dark-blue);
+  margin: auto;
+}
+
+section.main h1 {
+  color: var(--color-white);
+}
+
+.attribution {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

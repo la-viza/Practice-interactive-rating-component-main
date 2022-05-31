@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -14,13 +19,16 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="stylesheet" href="Sass/main.css" />
   </head>
   <body>
     <main>
       <section class="main">
         <div class="card__front">
-          <h1>How did we do?</h1>
+          <div class="card__front__img">
+            <img id="star" src="./images/icon-star.svg" alt="Star" />
+            <h1>How did we do?</h1>
+          </div>
           <p>
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
@@ -37,26 +45,23 @@
         </div>
       </section>
 
-      <section class="back">
-        <div class="card__back">
-          <p class="card__back__message">
-            You selected<span> 4 </span>out of 5
-          </p>
+      <section class="back" style="display: none">
+        <img src="./images/illustration-thank-you.svg" alt="Thank you" />
+        <p class="back__message">You selected<span> 4 </span>out of 5</p>
 
-          <h2>Thank you!</h2>
-          <p class="thank-you">
-            We appreciate you taking the time to give a rating. If you ever need
-            more support, don’t hesitate to get in touch!
-          </p>
-        </div>
+        <h2>Thank you!</h2>
+        <p class="back__thank-you">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
       </section>
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
     </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
   </body>
 </html>
