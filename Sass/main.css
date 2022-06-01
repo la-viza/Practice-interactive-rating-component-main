@@ -38,7 +38,7 @@ section.main {
   display: -ms-flexbox;
   display: flex;
   background-color: var(--color-dark-blue);
-  width: 50%;
+  width: 45%;
   margin: auto;
   border-radius: 1.5rem;
   padding: 2rem;
@@ -79,8 +79,13 @@ section.main button {
   border: none;
   border-radius: 2rem;
   text-transform: uppercase;
-  margin: 1rem;
-  padding: 0.7rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+section.main .card__front__rating__01 {
+  color: red;
 }
 
 .attribution {
