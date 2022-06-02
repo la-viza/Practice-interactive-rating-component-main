@@ -37,6 +37,10 @@ section.main, section.back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--color-dark-blue);
   width: 45%;
   margin: auto;
@@ -54,14 +58,6 @@ section.main.card__front__img, section.back.card__front__img {
   padding: 1rem;
   width: 1.2rem;
   margin-bottom: 2.3rem;
-}
-
-section.main img#back-image, section.back img#back-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 3rem;
 }
 
 section.main h1, section.back h1 {
@@ -116,6 +112,22 @@ section.back .card__front__rating #rating__05 {
   border-radius: 50%;
   padding: 1rem;
   width: 1.2rem;
+}
+
+section.main .image, section.back .image {
+  display: block;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5rem;
+  width: 100%;
+}
+
+section.main .back__message, section.back .back__message {
+  text-align: center;
 }
 
 .attribution {
