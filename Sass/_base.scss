@@ -30,7 +30,8 @@ body {
 }
 
 section {
-  &.main {
+  &.main,
+  &.back {
     display: flex;
     background-color: var(--color-dark-blue);
     width: 45%;
@@ -38,7 +39,7 @@ section {
     border-radius: 1.5rem;
     padding: 2rem;
 
-    .card__front__img {
+    &.card__front__img {
       display: flex;
       text-align: center;
       background-color: var(--color-medium-grey);
@@ -46,6 +47,12 @@ section {
       padding: 1rem;
       width: 1.2rem;
       margin-bottom: 2.3rem;
+    }
+
+    img#back-image {
+      display: flex;
+      width: 100%;
+      margin: 3rem;
     }
 
     h1 {

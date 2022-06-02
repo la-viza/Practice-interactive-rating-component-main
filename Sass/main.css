@@ -33,7 +33,7 @@ body {
   font-size: var(--font-size);
 }
 
-section.main {
+section.main, section.back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ section.main {
   padding: 2rem;
 }
 
-section.main .card__front__img {
+section.main.card__front__img, section.back.card__front__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,15 +56,23 @@ section.main .card__front__img {
   margin-bottom: 2.3rem;
 }
 
-section.main h1 {
+section.main img#back-image, section.back img#back-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 3rem;
+}
+
+section.main h1, section.back h1 {
   color: var(--color-white);
 }
 
-section.main p {
+section.main p, section.back p {
   line-height: 1.5;
 }
 
-section.main button {
+section.main button, section.back button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +93,7 @@ section.main button {
   letter-spacing: 0.1rem;
 }
 
-section.main .card__front__rating {
+section.main .card__front__rating, section.back .card__front__rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +105,11 @@ section.main .card__front__rating #rating__01,
 section.main .card__front__rating #rating__02,
 section.main .card__front__rating #rating__03,
 section.main .card__front__rating #rating__04,
-section.main .card__front__rating #rating__05 {
+section.main .card__front__rating #rating__05, section.back .card__front__rating #rating__01,
+section.back .card__front__rating #rating__02,
+section.back .card__front__rating #rating__03,
+section.back .card__front__rating #rating__04,
+section.back .card__front__rating #rating__05 {
   display: inline-block;
   text-align: center;
   background-color: var(--color-medium-grey);
