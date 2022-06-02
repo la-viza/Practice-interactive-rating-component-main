@@ -91,17 +91,30 @@ section {
       }
     }
 
-    .image {
-      display: block;
+    .back__image {
+      display: flex;
       width: 100%;
-      align-content: center;
       justify-content: center;
-      margin-left: 5rem;
       width: 100%;
+      padding: 2rem 0;
     }
 
     .back__message {
       text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--color-white);
+      font-size: 1.8rem;
+      margin-bottom: 0;
+    }
+
+    .back__thank-you {
+      padding: 0 1.5rem;
+      text-align: center;
+      font-size: 15px;
+      line-height: 1.5;
     }
   }
 }

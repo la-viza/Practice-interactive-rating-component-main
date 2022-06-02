@@ -114,20 +114,34 @@ section.back .card__front__rating #rating__05 {
   width: 1.2rem;
 }
 
-section.main .image, section.back .image {
-  display: block;
+section.main .back__image, section.back .back__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 5rem;
   width: 100%;
+  padding: 2rem 0;
 }
 
 section.main .back__message, section.back .back__message {
   text-align: center;
+}
+
+section.main h2, section.back h2 {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+section.main .back__thank-you, section.back .back__thank-you {
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .attribution {
