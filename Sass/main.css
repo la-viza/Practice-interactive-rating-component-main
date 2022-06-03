@@ -144,7 +144,7 @@ section.main .back__image, section.hidden .back__image {
   padding: 2rem 0;
 }
 
-section.main .back__message, section.hidden .back__message {
+section.main .selected-message, section.hidden .selected-message {
   text-align: center;
   color: var(--color-primary);
   border-radius: 2rem;
