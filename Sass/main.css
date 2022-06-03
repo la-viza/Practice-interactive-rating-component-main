@@ -137,16 +137,21 @@ section.main .back__image, section.back .back__image {
 
 section.main .back__message, section.back .back__message {
   text-align: center;
+  color: var(--color-primary);
+  border-radius: 2rem;
+  padding: 0.5rem 3rem;
+  margin: 1rem auto;
+  background-color: var(--color-medium-grey);
 }
 
-section.main h2, section.back h2 {
+section h2 {
   text-align: center;
   color: var(--color-white);
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 0;
 }
 
-section.main .back__thank-you, section.back .back__thank-you {
+section .back__thank-you {
   text-align: center;
   font-size: 15px;
   line-height: 1.5;
