@@ -89,12 +89,12 @@ section {
       gap: 1rem;
       align-content: space-around;
       justify-content: space-around;
+      margin: 1.5rem 0 3rem -2.5rem;
 
       .rating {
         display: flex;
         color: var(--color-light-grey);
         background-color: var(--color-medium-grey);
-
         border-radius: 100%;
         padding: 1rem;
         width: 1.2rem;

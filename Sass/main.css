@@ -109,6 +109,7 @@ section.main .card__front__rating ul, section.back .card__front__rating ul {
       align-content: space-around;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 1.5rem 0 3rem -2.5rem;
 }
 
 section.main .card__front__rating ul .rating, section.back .card__front__rating ul .rating {
