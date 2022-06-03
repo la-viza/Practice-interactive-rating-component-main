@@ -33,7 +33,7 @@ body {
   font-size: var(--font-size);
 }
 
-section.main, section.back {
+section.main, section.hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@ section.main, section.back {
   padding: 2.6rem;
 }
 
-section.main.card__front__img, section.back.card__front__img {
+section.main.card__front__img, section.hidden.card__front__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,15 +60,15 @@ section.main.card__front__img, section.back.card__front__img {
   margin-bottom: 2rem;
 }
 
-section.main h1, section.back h1 {
+section.main h1, section.hidden h1 {
   color: var(--color-white);
 }
 
-section.main p, section.back p {
+section.main p, section.hidden p {
   line-height: 1.5;
 }
 
-section.main button, section.back button {
+section.main button, section.hidden button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ section.main button, section.back button {
   letter-spacing: 0.1rem;
 }
 
-section.main button:focus, section.main button:hover, section.back button:focus, section.back button:hover {
+section.main button:focus, section.main button:hover, section.hidden button:focus, section.hidden button:hover {
   background-color: var(--color-white);
   color: var(--color-primary);
   cursor: pointer;
@@ -98,7 +98,7 @@ section.main button:focus, section.main button:hover, section.back button:focus,
   transition: 0.1s ease-out;
 }
 
-section.main .card__front__rating ul, section.back .card__front__rating ul {
+section.main .card__front__rating ul, section.hidden .card__front__rating ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +112,7 @@ section.main .card__front__rating ul, section.back .card__front__rating ul {
   margin: 1.5rem 0 3rem -2.5rem;
 }
 
-section.main .card__front__rating ul .rating, section.back .card__front__rating ul .rating {
+section.main .card__front__rating ul .rating, section.hidden .card__front__rating ul .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,16 +121,18 @@ section.main .card__front__rating ul .rating, section.back .card__front__rating 
   border-radius: 100%;
   padding: 1rem;
   width: 1.2rem;
+  text-decoration: none;
 }
 
-section.main .card__front__rating ul .rating:hover, section.back .card__front__rating ul .rating:hover {
+section.main .card__front__rating ul .rating:hover, section.hidden .card__front__rating ul .rating:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
-section.main .back__image, section.back .back__image {
+section.main .back__image, section.hidden .back__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +144,7 @@ section.main .back__image, section.back .back__image {
   padding: 2rem 0;
 }
 
-section.main .back__message, section.back .back__message {
+section.main .back__message, section.hidden .back__message {
   text-align: center;
   color: var(--color-primary);
   border-radius: 2rem;
