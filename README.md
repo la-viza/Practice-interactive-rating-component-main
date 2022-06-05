@@ -27,7 +27,7 @@ our screenshot. If you prefer not to add a screenshot, feel free to remove this 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://earnest-cannoli-61e669.netlify.app/)
 
 ## My process
 
