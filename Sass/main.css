@@ -177,34 +177,48 @@ section .back__thank-you {
   text-align: center;
   font-size: 15px;
   line-height: 1.5;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-#credentials {
-  position: fixed;
-  font-size: 11px;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-}
-
-#credentials a {
-  color: var(--color-primary);
+  margin-bottom: 0;
 }
 
 .hidden {
   display: none;
   visibility: hidden;
+  padding: 0.5rem;
+}
+
+.signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  color: var(--color-light-grey);
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: inherit;
+}
+
+.signature__links {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.signature__links:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.anchor_link a {
+  display: block;
+  color: var(--color-light-grey);
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 0;
+}
+
+.anchor_link a:hover {
+  cursor: pointer;
+  color: var(--color-primary);
 }
 /*# sourceMappingURL=main.css.map */
