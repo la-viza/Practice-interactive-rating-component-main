@@ -33,7 +33,7 @@ body {
   font-size: var(--font-size);
 }
 
-section.main, section.hidden {
+section.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@ section.main, section.hidden {
   padding: 2.6rem;
 }
 
-section.main.card__front__img, section.hidden.card__front__img {
+section.main.card__front__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,15 +60,15 @@ section.main.card__front__img, section.hidden.card__front__img {
   margin-bottom: 2rem;
 }
 
-section.main h1, section.hidden h1 {
+section.main h1 {
   color: var(--color-white);
 }
 
-section.main p, section.hidden p {
+section.main p {
   line-height: 1.5;
 }
 
-section.main .card__front__rating, section.hidden .card__front__rating {
+section.main .card__front__rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +81,7 @@ section.main .card__front__rating, section.hidden .card__front__rating {
   margin: 1.8rem 0 3rem 0;
 }
 
-section.main .card__front__rating .rating, section.hidden .card__front__rating .rating {
+section.main .card__front__rating .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +98,7 @@ section.main .card__front__rating .rating, section.hidden .card__front__rating .
   text-decoration: none;
 }
 
-section.main .card__front__rating .rating:hover, section.hidden .card__front__rating .rating:hover {
+section.main .card__front__rating .rating:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
   -webkit-transition: 0.2s ease;
@@ -106,12 +106,12 @@ section.main .card__front__rating .rating:hover, section.hidden .card__front__ra
   text-decoration: none;
 }
 
-section.main .card__front__rating .selected, section.hidden .card__front__rating .selected {
+section.main .card__front__rating .selected {
   background-color: var(--color-light-grey);
   color: white;
 }
 
-section.main button, section.hidden button {
+section.main button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +132,7 @@ section.main button, section.hidden button {
   letter-spacing: 0.1rem;
 }
 
-section.main button:hover, section.hidden button:hover {
+section.main button:hover {
   background-color: var(--color-white);
   color: var(--color-primary);
   cursor: pointer;
@@ -140,17 +140,12 @@ section.main button:hover, section.hidden button:hover {
   transition: 0.1s ease-out;
 }
 
-section.main .noHover, section.hidden .noHover {
+section.main button .noHover {
   pointer-events: none;
   background-color: var(--color-medium-grey);
 }
 
-section.main .hidden, section.hidden .hidden {
-  display: none;
-  visibility: hidden;
-}
-
-section.main .back__image, section.hidden .back__image {
+section.main .back__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +157,7 @@ section.main .back__image, section.hidden .back__image {
   padding: 2rem 0;
 }
 
-section.main .selected-message, section.hidden .selected-message {
+section.main .selected-message {
   text-align: center;
   color: var(--color-primary);
   border-radius: 2rem;
@@ -206,5 +201,10 @@ footer {
 
 #credentials a {
   color: var(--color-primary);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */

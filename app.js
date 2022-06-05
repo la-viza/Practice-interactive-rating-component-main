@@ -20,8 +20,8 @@ if (rating.classList.contains ("selected")) {
 })
 
 ratingSelected.classList.add("selected")
- submitBtn.classList.add("noHover")
- ratingValue = selectedRating.innerText
+ submitBtn.classList.remove("noHover")
+ ratingValue = ratingSelected.innerText
  return
 }
 

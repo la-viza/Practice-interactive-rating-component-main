@@ -30,8 +30,7 @@ body {
 }
 
 section {
-  &.main,
-  &.hidden {
+  &.main {
     display: flex;
     flex-direction: column;
     background-color: var(--color-dark-blue);
@@ -110,16 +109,11 @@ section {
         cursor: pointer;
         transition: 0.1s ease-out;
       }
-    }
 
-    .noHover {
-      pointer-events: none;
-      background-color: var(--color-medium-grey);
-    }
-
-    .hidden {
-      display: none;
-      visibility: hidden;
+      .noHover {
+        pointer-events: none;
+        background-color: var(--color-medium-grey);
+      }
     }
 
     .back__image {
@@ -171,4 +165,9 @@ footer {
   a {
     color: var(--color-primary);
   }
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
