@@ -1,5 +1,5 @@
-let ratings = document.querySelectorAll(".rating li")
-let submitBtn = document.querySelector(".card__front__btn")
+let ratings = document.querySelectorAll(".rating")
+let submitBtn = document.querySelector(".submit")
 let sections = document.querySelectorAll("section")
 let ratingNumber = document.querySelector("span")
 let ratingValue = "0";
@@ -8,7 +8,7 @@ const toggleRating = e => {
     let ratingSelected = e.target
     if (ratingSelected.classList.contains("selected")) {
         ratingSelected.classList.remove("selected")
-        submitBtn.classList.add("unHovered")
+        submitBtn.classList.add("noHover")
         ratingValue=0
         return
     }
@@ -20,7 +20,7 @@ if (rating.classList.contains ("selected")) {
 })
 
 ratingSelected.classList.add("selected")
- submitBtn.classList.add("unHovered")
+ submitBtn.classList.add("noHover")
  ratingValue = selectedRating.innerText
  return
 }
