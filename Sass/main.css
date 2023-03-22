@@ -1,10 +1,9 @@
 :root {
-  --color-primary: hsl(25, 97%, 53%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-light-grey: hsl(217, 12%, 63%);
-  --color-medium-grey: hsla(216, 12%, 54%, 0.15);
-  --color-dark-blue: hsla(214, 29%, 17%, 0.815);
-  --color-very-dark-blue: hsl(216, 12%, 8%);
+  --color-primary: #2eb872;
+  --color-heading: hsl(216, 12%, 8%);
+  --color-light-grey: hsla(214, 29%, 17%, 0.815);
+  --color-white: white;
+  --color-background: hsl(214, 23%, 94%);
   --font-primary: "Overpass", sans-serif;
   --font-size: 15px;
 }
@@ -27,7 +26,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--color-very-dark-blue);
   color: var(--color-light-grey);
   font-family: var(--font-primary);
   font-size: var(--font-size);
@@ -41,7 +39,7 @@ section.main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-background);
   width: 42%;
   max-height: 60vh;
   margin: auto;
@@ -62,7 +60,7 @@ section.main .card__front__img {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background-color: var(--color-medium-grey);
+  background-color: var(--color-white);
   border-radius: 50%;
   padding: 1rem;
   width: 1.2rem;
@@ -70,7 +68,7 @@ section.main .card__front__img {
 }
 
 section.main h1 {
-  color: var(--color-white);
+  color: var(--color-heading);
 }
 
 section.main p {
@@ -113,7 +111,7 @@ section.main .card__front__rating .rating {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--color-light-grey);
-  background-color: var(--color-medium-grey);
+  background-color: var(--color-white);
   border-radius: 50%;
   padding: 1rem;
   width: 1.2rem;
@@ -128,7 +126,7 @@ section.main .card__front__rating .rating {
 }
 
 section.main .card__front__rating .rating:hover {
-  color: var(--color-white);
+  color: var(--color-heading);
   background-color: var(--color-primary);
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -136,8 +134,8 @@ section.main .card__front__rating .rating:hover {
 }
 
 section.main .card__front__rating .selected {
-  background-color: var(--color-light-grey);
-  color: white;
+  background-color: #76ca88;
+  color: var(--color-white);
 }
 
 section.main button {
@@ -151,7 +149,7 @@ section.main button {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  color: var(--color-white);
+  color: var(--color-heading);
   background-color: var(--color-primary);
   border: none;
   border-radius: 2rem;
@@ -162,8 +160,8 @@ section.main button {
 }
 
 section.main button:hover {
-  background-color: var(--color-white);
-  color: var(--color-primary);
+  background-color: var(--color-light-grey);
+  color: var(--color-white);
   cursor: pointer;
   -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
@@ -171,7 +169,7 @@ section.main button:hover {
 
 section.main button .noHover {
   pointer-events: none;
-  background-color: var(--color-medium-grey);
+  background-color: var(--color-white);
 }
 
 section.main .back__image {
@@ -198,7 +196,7 @@ section.main .selected-message {
   border-radius: 2rem;
   padding: 0.5rem 3rem;
   margin: 1rem auto;
-  background-color: var(--color-medium-grey);
+  background-color: var(--color-white);
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -216,7 +214,7 @@ section.main .selected-message {
 
 section h2 {
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-heading);
   font-size: 1.9rem;
   margin-bottom: 0;
 }
@@ -250,7 +248,7 @@ section .back__thank-you {
 }
 
 .signature__links {
-  color: var(--color-white);
+  color: var(--color-heading);
   text-decoration: none;
 }
 
