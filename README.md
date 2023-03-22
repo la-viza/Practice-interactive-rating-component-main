@@ -1,4 +1,4 @@
-- Live Site URL: [Service Evaluation Component](https://earnest-cannoli-61e669.netlify.app/)
+- Live Site URL: [Service Evaluation Component](evaluation-component.netlify.app/)
 
 ## Built with
 
